@@ -31,7 +31,7 @@ module.exports = class WyzeAPI {
     this.appName = options.appName || constants.appName
     this.appVer = options.appVer || constants.appVer
     this.appVersion = options.appVersion || constants.appVersion
-    this.userAgent = options.userAgent || constants.userAgent
+    this.userAgent = options.userAgent || "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1 Safari/605.1.15";
     this.sc = options.sc || constants.sc
     this.sv = options.sv || constants.sv
 
@@ -45,7 +45,6 @@ module.exports = class WyzeAPI {
     // Login tokens
     this.access_token = ''
     this.refresh_token = ''
-
  
 
     this.dumpData = false // Set this to true to log the Wyze object data blob one time at startup.
